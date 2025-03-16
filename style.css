@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('TTLakes-Bold.woff2') format('woff2'),
-        url('TTLakes-Bold.woff') format('woff');
+    src: url('font/TTLakes-Bold.woff2') format('woff2'),
+        url('font/TTLakes-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('TTLakes-Regular.woff2') format('woff2'),
-        url('TTLakes-Regular.woff') format('woff');
+    src: url('font/TTLakes-Regular.woff2') format('woff2'),
+        url('font/TTLakes-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,4 +19,177 @@
 body {
     font-family: TT Lakes;
     font-weight: normal;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding-left: 30px;
+}
+
+button {
+    font-family: TT Lakes;
+    font-weight: normal;
+    border: none;
+    background-color: #F8F8F8;
+    padding: 0;
+}
+
+li {
+    padding: 15px 10px;
+    display: flex;
+    width: 240px;
+    height: 71px;
+    background-color: white;
+    list-style-type: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px lightgray solid;
+
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+
+.lenovo {
+    background-image: url(images/br-log/lenovo.png);
+}
+
+.samsung {
+    background-image: url(images/br-log/samsung.png);
+}
+
+.apple {
+    background-image: url(images/br-log/apple.png);
+}
+
+.vs {
+    background-image: url(images/br-log/ViewSonic.png);
+}
+
+.bosch {
+    background-image: url(images/br-log/bosch.png);
+}
+
+.hp {
+    background-image: url(images/br-log/hp.png);
+}
+
+.acer {
+    background-image: url(images/br-log/acer.png);
+}
+
+.sony {
+    background-image: url(images/br-log/sony.png);
+}
+
+.brend-logo {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 50%;
+}
+
+.arrow-next {
+    background-image: url(images/icons/go.svg);
+    width: 65px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 50%;
+    margin-left: 40px;
+    transition: opacity 0.25s;
+}
+
+.arrow-next:hover {
+    opacity: 70%;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.brend-list__logo {
+    height: 170px;
+    overflow: hidden;
+}
+
+.show-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    transition: opacity 0.25s;
+    visibility: hidden;
+}
+
+.show-btn:hover {
+    opacity: 70%;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+.header-block__brend-title {
+    font-size: 16px;
+    text-transform:uppercase;
+    color: #7E7E82;
+    align-items: center;
+    border-top: 1px #D9FFF5 solid;
+    display: flex;
+    width: 100vw;
+    height: 55px;
+    background: linear-gradient(to right, #F8F8F8, white);
+    padding: 10px 0px;
+}
+
+
+@media (min-width: 320px) {
+
+    body {
+        padding-left: 15px;
+    }
+
+    li {
+        width: 240px;
+        flex-shrink: 0;
+    }
+
+    .brend-list__logo {
+        height: auto;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+    body {
+        padding-left: 20px;
+    }
+
+    .show-btn {
+        visibility: visible;
+    }
+
+    .brend-list__logo {
+        height: 165px;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+   li {
+    width: 222px;
+   } 
+}
+
+@media (min-width: 1120px) {
+
+    body {
+        padding-left: 30px;
+    }
+
+    li {
+        width: 240px;
+       } 
 }
