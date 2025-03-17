@@ -109,8 +109,12 @@ ul {
 }
 
 .brend-list__logo {
-    height: 170px;
-    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    overflow: hidden; 
 }
 
 .show-btn {
@@ -142,8 +146,38 @@ ul {
     padding: 10px 0px;
 }
 
+/* СЛАЙДЕР ДЛЯ МОБИЛКИ */
+  
+.dots {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: lightgray;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bullet.active {
+    background: gray;
+}
+
+.slider {
+    scroll-snap-align: start;
+}
+
 
 @media (min-width: 320px) {
+
+    .dots {
+        display: flex;
+    }
 
     body {
         padding-left: 15px;
@@ -163,6 +197,10 @@ ul {
 }
 
 @media (min-width: 768px) {
+
+    .dots {
+        display: none;
+    }
     
     body {
         padding-left: 20px;
