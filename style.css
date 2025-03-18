@@ -142,7 +142,6 @@ ul {
     overflow: hidden;
     justify-content: space-between;
     transform: all 0.25s;
-    
 }
 
 .brend-list__show-button:hover {
@@ -195,15 +194,10 @@ ul {
     visibility: hidden;
 }
 
-
 .closed-brend-list {
     height: 165px; 
     overflow: hidden;
  }
-
- .open-brend-list {
-    overflow: visible;
-}
 
 
 @media (min-width: 320px) {
@@ -249,6 +243,10 @@ ul {
         flex-wrap: wrap;
         overflow: hidden;
         margin: 20px 20px;
+    }
+
+    .open-brend-list {
+        overflow: visible;
     }
 
    li {
