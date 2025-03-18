@@ -197,6 +197,10 @@ ul {
 
 @media (min-width: 320px) {
 
+    .header-block__brend-title {
+        padding-left: 15px;
+    }
+
     .dots {
         display: flex;
     }
@@ -210,6 +214,11 @@ ul {
         height: auto;
         flex-wrap: nowrap;
         overflow: scroll;
+        margin: 15px 15px;
+    }
+
+    .brend-list__logo::-webkit-scrollbar { 
+        width: 0;
     }
 
     .fix-block {
@@ -271,6 +280,10 @@ ul {
         height: 165px; 
         overflow: hidden;
      }
+
+     .second {
+        display: none;
+     }
 }
 
 @media (min-width: 1120px) {
@@ -292,3 +305,14 @@ ul {
        } 
 
 } 
+
+@media (min-width: 1600px) {
+
+    .brend-list__show-button {
+        display: none;
+    }
+
+    .second {
+        display: flex;
+     }
+}
