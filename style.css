@@ -216,9 +216,16 @@ ul {
         display: none;
     }
 
+    .arrows-top {
+        visibility: hidden;
+    }
 }
 
 @media (min-width: 768px) {
+
+    .arrows-top {
+        visibility: visible;
+    }
 
     .dots {
         display: none;
