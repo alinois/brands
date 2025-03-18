@@ -228,6 +228,17 @@ ul {
     .arrows-top {
         visibility: hidden;
     }
+
+    .fix-block,
+    .fix-block1,
+    .fix-block2,
+    .fix-block3 {
+        display: none;
+    }
+
+    .unvisib {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -281,9 +292,31 @@ ul {
         overflow: hidden;
      }
 
-     .second {
+     .fix-block1 {
+        display: flex;
+        visibility: hidden;
+     }
+
+     .fix-block2 {
+        visibility: hidden;
+     }
+
+     .fix-block3 {
         display: none;
      }
+
+     .unvisib {
+        display: none;
+    }
+
+    .fix-block3 {
+        display: none;
+    }
+
+    .fix-block2 {
+        display: none;
+    }
+
 }
 
 @media (min-width: 1120px) {
@@ -303,16 +336,39 @@ ul {
     li {
         width: 240px;
        } 
+    
+    .unvisib {
+        display: none;
+    }
+
+    .fix-block1 {
+        visibility: none;
+     }
+
+     .fix-block2 {
+        display: none;
+     }
 
 } 
 
 @media (min-width: 1600px) {
 
-    .brend-list__show-button {
-        display: none;
+    .unvisib {
+        display: flex;
     }
 
-    .second {
+    
+    .fix-block1,
+    .fix-block2 {
         display: flex;
+        visibility: hidden;
      }
+}
+
+@media (min-width: 1860px) {
+
+    .fix-block3 {
+        display: flex;
+        visibility: hidden;
+    }
 }

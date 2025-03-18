@@ -33,7 +33,7 @@ button.onclick = function () {
         button.classList.add('open-btn')
         rotate.classList.add('rot')
 
-        btntext.value = 'Скрыть'
+        btntext.value = ' Скрыть'
 } else {
     brends.classList.remove('open-brend-list')
     button.classList.remove('open-btn')
@@ -43,7 +43,7 @@ button.onclick = function () {
     button.classList.add('close-btn')
     rotate.classList.add('non-rot')
     
-    btntext.value = 'Показать все'
+    btntext.value = ' Показать все'
 }
 
 }
