@@ -196,6 +196,16 @@ ul {
 }
 
 
+.closed-brend-list {
+    height: 165px; 
+    overflow: hidden;
+ }
+
+ .open-brend-list {
+    overflow: visible;
+}
+
+
 @media (min-width: 320px) {
 
     .dots {
@@ -230,10 +240,6 @@ ul {
         
     }
 
-    .open-brend-list {
-        overflow: visible;
-    }
-
     .brend-list__show-button {
       margin-left: 5px;  
     }
@@ -244,12 +250,6 @@ ul {
         overflow: hidden;
         margin: 20px 20px;
     }
-
-    .closed-brend-list {
-       height: 165px; 
-    }
-
-
 
    li {
     width: 222px;
@@ -285,8 +285,4 @@ ul {
     li {
         width: 240px;
        } 
-
-    .open-brend-list {
-        overflow: visible;
-    }
 } 
