@@ -194,11 +194,6 @@ ul {
     visibility: hidden;
 }
 
-.closed-brend-list {
-    height: 165px; 
-    overflow: hidden;
- }
-
 
 @media (min-width: 320px) {
 
@@ -264,6 +259,11 @@ ul {
     .fix-block {
         display: flex;
     }
+
+    .closed-brend-list {
+        height: 165px; 
+        overflow: hidden;
+     }
 }
 
 @media (min-width: 1120px) {
@@ -283,4 +283,5 @@ ul {
     li {
         width: 240px;
        } 
+
 } 
