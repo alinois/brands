@@ -21,7 +21,6 @@ body {
     font-weight: normal;
     background-color: #F8F8F8;
     margin: 0;
-    padding-left: 30px;
 }
 
 button {
@@ -30,6 +29,32 @@ button {
     border: none;
     background-color: #F8F8F8;
     padding: 0;
+}
+
+.show-btn {
+    font-family: TT Lakes;
+    font-weight: normal;
+    border: none;
+    font-size: 16px;
+    background-color: #F8F8F8;
+    visibility: hidden;
+    white-space: pre-wrap;
+}
+
+.arrows-top {
+    position: relative;
+    right: -1%;
+}
+
+.rot {
+    transform: rotate(180deg);
+}
+
+.brend-list__show-button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: opacity 0.25s;
 }
 
 li {
@@ -114,19 +139,13 @@ ul {
     transition: transform 0.5s ease-in-out;
     scroll-snap-type: x mandatory;
     white-space: nowrap;
-    overflow: hidden; 
+    overflow: hidden;
+    justify-content: space-between;
+    transform: all 0.25s;
+    
 }
 
-.show-btn {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-top: 10px;
-    transition: opacity 0.25s;
-    visibility: hidden;
-}
-
-.show-btn:hover {
+.brend-list__show-button:hover {
     opacity: 70%;
     transition: 0.25s;
     cursor: pointer;
@@ -172,15 +191,15 @@ ul {
     scroll-snap-align: start;
 }
 
+.fix-block {
+    visibility: hidden;
+}
+
 
 @media (min-width: 320px) {
 
     .dots {
         display: flex;
-    }
-
-    body {
-        padding-left: 15px;
     }
 
     li {
@@ -194,6 +213,10 @@ ul {
         overflow: scroll;
     }
 
+    .fix-block {
+        display: none;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -201,33 +224,69 @@ ul {
     .dots {
         display: none;
     }
-    
-    body {
-        padding-left: 20px;
-    }
 
     .show-btn {
         visibility: visible;
+        
+    }
+
+    .open-brend-list {
+        overflow: visible;
+    }
+
+    .brend-list__show-button {
+      margin-left: 5px;  
     }
 
     .brend-list__logo {
-        height: 165px;
+        
         flex-wrap: wrap;
         overflow: hidden;
+        margin: 20px 20px;
     }
+
+    .closed-brend-list {
+       height: 165px; 
+    }
+
+
 
    li {
     width: 222px;
    } 
+
+   .header-block__brend-title {
+    padding-left: 20px;
+    }
+
+    .show-btn {
+        padding-left: 15px;
+    }
+
+    .fix-block {
+        display: flex;
+    }
 }
 
 @media (min-width: 1120px) {
 
-    body {
+    .brend-list__show-button {
+        margin-left: 15px;
+    }
+
+    .header-block__brend-title {
         padding-left: 30px;
+    }
+
+    .brend-list__logo {
+        margin: 30px 30px;
     }
 
     li {
         width: 240px;
        } 
-}
+
+    .open-brend-list {
+        overflow: visible;
+    }
+} 
