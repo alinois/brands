@@ -139,7 +139,7 @@ ul {
     transition: transform 0.5s ease-in-out;
     scroll-snap-type: x mandatory;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: visible;
     justify-content: space-between;
     transform: all 0.25s;
 }
@@ -261,14 +261,15 @@ ul {
     }
 
     .brend-list__logo {
-        
         flex-wrap: wrap;
-        overflow: hidden;
         margin: 20px 20px;
+        margin-bottom: 5px;
+        transition: height 1s;
     }
 
     .open-brend-list {
-        overflow: visible;
+        height: 360px;
+        transition: 1s;
     }
 
    li {
@@ -288,8 +289,7 @@ ul {
     }
 
     .closed-brend-list {
-        height: 165px; 
-        overflow: hidden;
+        height: 180px; 
      }
 
      .fix-block1 {
@@ -331,6 +331,7 @@ ul {
 
     .brend-list__logo {
         margin: 30px 30px;
+        margin-bottom: 5px;
     }
 
     li {
@@ -348,6 +349,12 @@ ul {
      .fix-block2 {
         display: none;
      }
+
+     .open-brend-list {
+        height: 268px;
+        transition: 1s;
+    }
+
 
 } 
 
